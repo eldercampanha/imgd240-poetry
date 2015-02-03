@@ -1,6 +1,7 @@
-<h1><%= @poems.title %></h1><br>
+<h1><%= @poems.title %></h1>
  
-
 <%= simple_format(@poems.body) %>
 
-<p><%= link_to("Back to the list of poems", poems_path) %></p><br>
+<h3><%= @poems.author %></h3>
+
+<%= link_to("Back to the list of poems", poems_path) %><br>

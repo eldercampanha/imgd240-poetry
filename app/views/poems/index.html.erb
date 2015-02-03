@@ -1,6 +1,6 @@
 <h1>Here are my poems!</h1>
 
 <% @poems.each do |poem| %>
-  <h2><%= poem.title %></h2>
-  <h3><%= link_to(poem.author, poem_path(poem)) %></h3>
+  <h2><%= link_to(poem.title, poem_path(poem)) %></h2>
+  <h3><%= poem.author %></h3>
 <% end %>
